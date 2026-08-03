@@ -1,0 +1,112 @@
+/* ==========================
+   PRIVACY POLICY STYLES
+========================== */
+.policy-hero {
+    background: linear-gradient(rgba(18, 54, 59, 0.9), rgba(35, 53, 61, 0.95)), #12363b;
+    padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+}
+
+.page-subtitle {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: #00b4d8;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+/* Policy Content Body */
+.policy-content-section {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background: #23353d;
+}
+
+.policy-wrapper {
+    background: #12363b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+    padding: clamp(2rem, 4vw, 3.5rem);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+.policy-block h2 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    color: #ffffff;
+    margin-bottom: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.policy-block h2 i {
+    color: #00b4d8;
+    font-size: 1.25rem;
+}
+
+.policy-block p {
+    color: #d6d6d6;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+}
+
+.policy-list {
+    list-style: none;
+    margin-top: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.policy-list li {
+    color: #d6d6d6;
+    font-size: 0.9375rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    line-height: 1.5;
+}
+
+.policy-list li i {
+    color: #00b4d8;
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+}
+
+.policy-list li strong {
+    color: #ffffff;
+}
+
+/* Contact Box */
+.contact-box {
+    background: #1d5056;
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-box p {
+    color: #ffffff;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.contact-box p i {
+    color: #00b4d8;
+    width: 1.25rem;
+}
