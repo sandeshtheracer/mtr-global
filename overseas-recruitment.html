@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overseas Recruitment Services - MTR Global</title>
+
+    <!-- Base & Components CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
+    
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="css/service-detail.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Dynamic Load Hoga -->
+    <div id="header-container"></div>
+
+    <!-- ==========================================
+                    1. HERO BANNER
+    =========================================== -->
+    <section class="service-hero">
+        <div class="container">
+            <span class="hero-badge"><i class="fas fa-globe"></i> Core Service</span>
+            <h1 class="page-title">Overseas Recruitment Solutions</h1>
+            <p class="page-subtitle">Connecting world-class international employers with vetted, highly-skilled, and reliable workforce across GCC, Europe, and Asia.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+                2. MAIN SERVICE CONTENT
+    =========================================== -->
+    <section class="service-detail-section">
+        <div class="container service-detail-grid">
+            
+            <!-- Left Content Area -->
+            <div class="main-content">
+                
+                <div class="content-block">
+                    <h2>End-to-End International Manpower Sourcing</h2>
+                    <p>At MTR Global, our overseas recruitment process goes far beyond simple resume matching. We act as strategic talent partners for global enterprises, managing everything from bulk workforce sourcing and trade testing to final mobilization and deployment.</p>
+                    <p>Whether you need thousands of skilled construction workers for mega-infrastructure projects or specialized engineers and healthcare specialists, we deliver compliant, audit-ready manpower solutions tailored to local labor laws.</p>
+                </div>
+
+                <!-- Industry Sectors Covered -->
+                <div class="content-block">
+                    <h3><i class="fas fa-industry"></i> Key Industry Sectors We Serve</h3>
+                    <div class="sectors-grid">
+                        <div class="sector-card">
+                            <i class="fas fa-hard-hat"></i>
+                            <h4>Construction & Infra</h4>
+                            <p>Masons, Steel Fixers, Carpenters, Civil Engineers, Scaffolders.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-oil-can"></i>
+                            <h4>Oil, Gas & Energy</h4>
+                            <p>Welders (6G/TIG/MIG), Pipefitters, Rig Operators, Safety Officers.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-user-md"></i>
+                            <h4>Healthcare & Medical</h4>
+                            <p>Registered Nurses, Lab Technicians, Doctors, Caregivers.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>Hospitality & Retail</h4>
+                            <p>Chefs, Waiters, Housekeeping Staff, Store Associates, Security.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step-by-Step Recruitment Process -->
+                <div class="content-block">
+                    <h3><i class="fas fa-project-diagram"></i> Our 6-Step Recruitment Workflow</h3>
+                    <div class="workflow-steps">
+                        
+                        <div class="workflow-step">
+                            <div class="step-number">01</div>
+                            <div class="step-info">
+                                <h4>Demand & Requirement Sourcing</h4>
+                                <p>We analyze the employer's Demand Letter (DL), Power of Attorney (POA), and specific Job Descriptions.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">02</div>
+                            <div class="step-info">
+                                <h4>Sourcing & Candidate Shortlisting</h4>
+                                <p>Tapping into our extensive database and conducting regional recruitment drives to shortlist top matches.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">03</div>
+                            <div class="step-info">
+                                <h4>Trade Testing & Interviews</h4>
+                                <p>Practical skills evaluation at government-approved trade test centers and face-to-face/virtual client interviews.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">04</div>
+                            <div class="step-info">
+                                <h4>Medical Checkup & Documentation</h4>
+                                <p>GAMCA/Approved medical checkups, PCC (Police Clearance Certificate) verification, and background checks.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">05</div>
+                            <div class="step-info">
+                                <h4>Visa Stamping & Flight Deployment</h4>
+                                <p>Embassy processing, work permit approval, flight ticketing, and pre-departure orientation briefing (PDOB).</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="service-sidebar">
+                
+                <!-- Quick Enquiry Form -->
+                <div class="sidebar-widget widget-form">
+                    <h3>Hire Overseas Talent</h3>
+                    <p>Tell us your manpower requirements and our team will get back within 24 hours.</p>
+                    <form onsubmit="event.preventDefault(); alert('Enquiry Submitted! Our team will contact you shortly.');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Business Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone / WhatsApp Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Required Industry</option>
+                                <option>Construction & Engineering</option>
+                                <option>Oil & Gas</option>
+                                <option>Healthcare</option>
+                                <option>Hospitality</option>
+                                <option>Logistics & Transport</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-sidebar"><i class="fas fa-paper-plane"></i> Request Manpower</button>
+                    </form>
+                </div>
+
+                <!-- Navigation Widget -->
+                <div class="sidebar-widget widget-nav">
+                    <h3>All Services</h3>
+                    <ul>
+                        <li><a href="overseas-recruitment.html" class="active"><i class="fas fa-chevron-right"></i> Overseas Recruitment</a></li>
+                        <li><a href="visa-processing.html"><i class="fas fa-chevron-right"></i> Visa Processing</a></li>
+                        <li><a href="career-consulting.html"><i class="fas fa-chevron-right"></i> Career Consulting</a></li>
+                        <li><a href="skill-assessment.html"><i class="fas fa-chevron-right"></i> Skill Assessment</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Footer Dynamic Load Hoga -->
+    <div id="footer-container"></div>
+
+    <!-- Layout Loader JS -->
+    <script src="js/layout-loader.js"></script>
+</body>
+</html>

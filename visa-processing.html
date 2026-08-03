@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Processing Services - MTR Global</title>
+
+    <!-- Base & Components CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
+    
+    <!-- Page Specific CSS (Reusing standard service detail CSS) -->
+    <link rel="stylesheet" href="css/service-detail.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Dynamic Load Hoga -->
+    <div id="header-container"></div>
+
+    <!-- ==========================================
+                    1. HERO BANNER
+    =========================================== -->
+    <section class="service-hero">
+        <div class="container">
+            <span class="hero-badge"><i class="fas fa-passport"></i> Core Service</span>
+            <h1 class="page-title">Work Visa & Embassy Processing</h1>
+            <p class="page-subtitle">Hassle-free, 100% compliant visa endorsement, embassy stamping, document attestation, and flight deployment for overseas candidates.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+                2. MAIN SERVICE CONTENT
+    =========================================== -->
+    <section class="service-detail-section">
+        <div class="container service-detail-grid">
+            
+            <!-- Left Content Area -->
+            <div class="main-content">
+                
+                <div class="content-block">
+                    <h2>Complete Visa Stamping & Legal Clearance</h2>
+                    <p>International visa regulations are complex and frequently updated. At MTR Global, our dedicated embassy relations team handles the entire visa lifecycle—from initial quota validation to final pre-departure emigration clearance (POE).</p>
+                    <p>We work directly with foreign embassies, consulates, VFS global centers, and authorized medical boards to ensure zero delays in candidate deployment.</p>
+                </div>
+
+                <!-- Specialized Visa Services -->
+                <div class="content-block">
+                    <h3><i class="fas fa-file-invoice"></i> Key Visa Services We Handle</h3>
+                    <div class="sectors-grid">
+                        <div class="sector-card">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>Employment / Work Visa</h4>
+                            <p>Bulk work permit quota approval, block visa handling, and embassy stamping.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-file-signature"></i>
+                            <h4>Document Attestation</h4>
+                            <p>HRD, MEA (Apostille), and Foreign Embassy degree/certificate attestations.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>GAMCA Medical Slip</h4>
+                            <p>Online medical appointment booking and medical fit report coordination.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-plane-departure"></i>
+                            <h4>POE & Travel Clearance</h4>
+                            <p>Protector of Emigrants (POE) clearance, flight booking, and airport assistance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visa Step-by-step Workflow -->
+                <div class="content-block">
+                    <h3><i class="fas fa-tasks"></i> Step-by-Step Visa Clearance Process</h3>
+                    <div class="workflow-steps">
+                        
+                        <div class="workflow-step">
+                            <div class="step-number">01</div>
+                            <div class="step-info">
+                                <h4>Document Audit & Verification</h4>
+                                <p>Checking candidate Passport validity, original certificates, and employer Work Permit / Demand Documents.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">02</div>
+                            <div class="step-info">
+                                <h4>Medical Clearance (GAMCA/Approved)</h4>
+                                <p>Generating online medical slips and verifying medical fitness reports from embassy-recognized diagnostic centers.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">03</div>
+                            <div class="step-info">
+                                <h4>Certificate & PCC Attestation</h4>
+                                <p>Managing Police Clearance Certificates (PCC) and educational degree attestations from Home Department & MEA.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">04</div>
+                            <div class="step-info">
+                                <h4>Embassy Stamping & POE</h4>
+                                <p>Submitting passports to respective consulates for visa endorsement followed by Emigration (POE) clearance.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="service-sidebar">
+                
+                <!-- Quick Enquiry Form -->
+                <div class="sidebar-widget widget-form">
+                    <h3>Check Visa Status / Enquiry</h3>
+                    <p>Have questions regarding visa stamping or document attestation? Get in touch.</p>
+                    <form onsubmit="event.preventDefault(); alert('Visa Enquiry Submitted! Our specialist will reach out shortly.');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Destination Country</option>
+                                <option>Saudi Arabia (KSA)</option>
+                                <option>United Arab Emirates (UAE)</option>
+                                <option>Qatar / Kuwait / Oman</option>
+                                <option>European Countries</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Service Needed</option>
+                                <option>Work Visa Stamping</option>
+                                <option>Certificate Attestation</option>
+                                <option>GAMCA Medical Assistance</option>
+                                <option>POE / Emigration</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-sidebar"><i class="fas fa-paper-plane"></i> Submit Visa Query</button>
+                    </form>
+                </div>
+
+                <!-- Navigation Widget -->
+                <div class="sidebar-widget widget-nav">
+                    <h3>All Services</h3>
+                    <ul>
+                        <li><a href="overseas-recruitment.html"><i class="fas fa-chevron-right"></i> Overseas Recruitment</a></li>
+                        <li><a href="visa-processing.html" class="active"><i class="fas fa-chevron-right"></i> Visa Processing</a></li>
+                        <li><a href="career-consulting.html"><i class="fas fa-chevron-right"></i> Career Consulting</a></li>
+                        <li><a href="skill-assessment.html"><i class="fas fa-chevron-right"></i> Skill Assessment</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Footer Dynamic Load Hoga -->
+    <div id="footer-container"></div>
+
+    <!-- Layout Loader JS -->
+    <script src="js/layout-loader.js"></script>
+</body>
+</html>

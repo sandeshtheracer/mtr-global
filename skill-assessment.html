@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Assessment & Trade Testing - MTR Global</title>
+
+    <!-- Base & Components CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
+    
+    <!-- Page Specific CSS (Reusing standard service detail CSS) -->
+    <link rel="stylesheet" href="css/service-detail.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Dynamic Load Hoga -->
+    <div id="header-container"></div>
+
+    <!-- ==========================================
+                    1. HERO BANNER
+    =========================================== -->
+    <section class="service-hero">
+        <div class="container">
+            <span class="hero-badge"><i class="fas fa-microchip"></i> Quality Assurance</span>
+            <h1 class="page-title">Skill Assessment & Trade Testing</h1>
+            <p class="page-subtitle">Rigorous pre-selection trade evaluation, practical testing, and certified skill verification in state-of-the-art training centers.</p>
+        </div>
+    </section>
+
+    <!-- ==========================================
+                2. MAIN SERVICE CONTENT
+    =========================================== -->
+    <section class="service-detail-section">
+        <div class="container service-detail-grid">
+            
+            <!-- Left Content Area -->
+            <div class="main-content">
+                
+                <div class="content-block">
+                    <h2>Ensuring Right Skills for High-Impact Roles</h2>
+                    <p>To eliminate deployment risks for international clients, MTR Global conducts rigorous practical and theoretical trade testing. We partner with government-accredited polytechnic centers and technical trade test institutes to evaluate every worker before shortlisting.</p>
+                    <p>From precision welding (6G / TIG / MIG) and heavy equipment operation to electrical wiring and healthcare clinical rounds, our testing guarantees that deployed candidates are 100% job-ready from Day 1.</p>
+                </div>
+
+                <!-- Specialized Trade Test Categories -->
+                <div class="content-block">
+                    <h3><i class="fas fa-tools"></i> Trade Testing Categories Covered</h3>
+                    <div class="sectors-grid">
+                        <div class="sector-card">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Electrical & Mechanical</h4>
+                            <p>Industrial electricians, HVAC technicians, plumbers, pipefitters, millwrights.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-fire-flame-curved"></i>
+                            <h4>Welding & Fabrication</h4>
+                            <p>SMAW, TIG, MIG, 3G/4G/6G certified welders, structural fabricators.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-truck-monster"></i>
+                            <h4>Heavy Equipment Driving</h4>
+                            <p>Crane operators, excavator drivers, trailer drivers with valid GCC licenses.</p>
+                        </div>
+                        <div class="sector-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Technical & IT Screening</h4>
+                            <p>CAD draftspersons, site surveyors, QA/QC inspectors, safety stewards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing Workflow -->
+                <div class="content-block">
+                    <h3><i class="fas fa-clipboard-check"></i> Trade Evaluation Framework</h3>
+                    <div class="workflow-steps">
+                        
+                        <div class="workflow-step">
+                            <div class="step-number">01</div>
+                            <div class="step-info">
+                                <h4>Theoretical Knowledge Screening</h4>
+                                <p>Checking baseline technical terminology, blueprint reading ability, and safety protocol comprehension.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">02</div>
+                            <div class="step-info">
+                                <h4>Practical Workshop Test</h4>
+                                <p>Live hands-on testing inside trade centers supervised by certified chief instructors and client delegates.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">03</div>
+                            <div class="step-info">
+                                <h4>HSE & Safety Compliance Audit</h4>
+                                <p>Verifying understanding of site safety regulations, Personal Protective Equipment (PPE) usage, and emergency protocols.</p>
+                            </div>
+                        </div>
+
+                        <div class="workflow-step">
+                            <div class="step-number">04</div>
+                            <div class="step-info">
+                                <h4>Grading & Certification Issue</h4>
+                                <p>Issuing detailed skill scorecards and trade certificates to shortlisted candidates prior to visa processing.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="service-sidebar">
+                
+                <!-- Quick Enquiry Form -->
+                <div class="sidebar-widget widget-form">
+                    <h3>Book A Trade Test</h3>
+                    <p>Employers can request custom trade testing sessions for candidate batches.</p>
+                    <form onsubmit="event.preventDefault(); alert('Trade Test Request Submitted! Our testing manager will contact you.');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Company / Individual Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Trade</option>
+                                <option>Welding / Fabrication</option>
+                                <option>Electrical / HVAC / Plumbing</option>
+                                <option>Construction / Masonry / Shuttering</option>
+                                <option>Heavy Equipment Driver</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-sidebar"><i class="fas fa-vial"></i> Schedule Test</button>
+                    </form>
+                </div>
+
+                <!-- Navigation Widget -->
+                <div class="sidebar-widget widget-nav">
+                    <h3>All Services</h3>
+                    <ul>
+                        <li><a href="overseas-recruitment.html"><i class="fas fa-chevron-right"></i> Overseas Recruitment</a></li>
+                        <li><a href="visa-processing.html"><i class="fas fa-chevron-right"></i> Visa Processing</a></li>
+                        <li><a href="career-consulting.html"><i class="fas fa-chevron-right"></i> Career Consulting</a></li>
+                        <li><a href="skill-assessment.html" class="active"><i class="fas fa-chevron-right"></i> Skill Assessment</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Footer Dynamic Load Hoga -->
+    <div id="footer-container"></div>
+
+    <!-- Layout Loader JS -->
+    <script src="js/layout-loader.js"></script>
+</body>
+</html>
