@@ -1,0 +1,357 @@
+/* ==========================
+   RESET & BASE (Using rem)
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #23353d;
+    overflow-x: hidden;
+}
+
+/* ==========================
+   HEADER & CONTAINER FIX
+========================== */
+.main-header {
+    width: 100%;
+    background: #12363b;
+    min-height: 5.625rem; /* 90px */
+    box-shadow: 0 1.25rem 1.5625rem rgba(230, 227, 213, 0.205);
+    position: relative;
+}
+
+/* Fluid Padding using clamp for fluid layout */
+.container {
+    width: 100%;
+    padding: 0 clamp(0.9375rem, 3vw, 2.5rem); /* 15px se 40px tak smooth scaling */
+}
+
+/* ==========================
+   NAVBAR ALIGNMENT
+========================== */
+.navbar {
+    width: 100%;
+    min-height: 5.625rem;
+    display: flex;
+    justify-content: space-between; /* Strictly Left and Right */
+    align-items: center;
+}
+
+/* ==========================
+   LEFT - LOGO (Fluid scaling with clamp)
+========================== */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar-brand-link {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: clamp(0.5rem, 1vw, 0.75rem);
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-brand-logo {
+    /* Logo scaling smoothly from 42px (2.625rem) to 55px (3.4375rem) */
+    width: clamp(2.625rem, 4vw, 3.4375rem);
+    height: clamp(2.625rem, 4vw, 3.4375rem);
+    object-fit: contain;
+    grid-row: 1 / 3;
+}
+
+.navbar-brand-name {
+    /* Fluid typography: 20px se 28px tak auto resize */
+    font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+/* Tagline bilkul gayab nahi hogi, fluidly shrink hogi */
+.navbar-brand-tagline {
+    /* 11px se 13px tak auto resize */
+    font-size: clamp(0.6875rem, 1vw, 0.8125rem);
+    color: #d6d6d6;
+    margin-top: -0.125rem;
+    white-space: nowrap;
+}
+
+/* ==========================
+   RIGHT - MENU (Strictly Right)
+========================== */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(0.75rem, 1.5vw, 1.25rem);
+}
+
+/* Menu Items */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: clamp(0.5rem, 0.8vw, 0.625rem) clamp(0.625rem, 1vw, 0.875rem);
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(0.875rem, 1vw, 0.9375rem); /* 14px - 15px */
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.navbar-link:hover {
+    background: rgba(255, 255, 255, .12);
+}
+
+/* Search Box */
+.navbar-search {
+    display: flex;
+    align-items: center;
+    width: clamp(9.375rem, 14vw, 12.5rem); /* 150px se 200px tak fluid */
+    height: 2.5rem; /* 40px */
+    background: #1d5056;
+    border-radius: 1.875rem;
+    overflow: hidden;
+}
+
+.navbar-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: 0 0.9375rem;
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+.navbar-search input::placeholder {
+    color: #d9d9d9;
+}
+
+.navbar-search button {
+    width: 2.5rem;
+    height: 100%;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Login/Actions */
+.navbar-actions {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.navbar-action-link {
+    text-decoration: none;
+    color: #fff;
+    background: #1d5056;
+    padding: 0.5625rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.navbar-action-link:hover {
+    background: #fff;
+    color: #12363b;
+}
+
+/* Language */
+.navbar-language {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: #fff;
+}
+
+.navbar-language-select {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.navbar-language-select option {
+    color: #000;
+}
+
+/* ==========================
+   MOBILE TOGGLE BUTTON
+========================== */
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-button {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1.625rem;
+    cursor: pointer;
+}
+
+/* ==========================
+   RESPONSIVE & TOGGLE DRAWER
+========================== */
+
+/* Screen < 64rem (1024px) hone par Dropdown Toggle Menu Active Hoga */
+@media (max-width: 64rem) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-right {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #12363b;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem 1.875rem;
+        gap: 0.9375rem;
+        box-shadow: 0 0.9375rem 1.25rem rgba(0,0,0,0.3);
+        border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-right.active {
+        display: flex;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-search, 
+    .navbar-actions, 
+    .navbar-language {
+        width: 100%;
+    }
+
+    .navbar-action-link {
+        text-align: center;
+        flex: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide Google Translate Banner & Floating Boxes */
+.goog-te-banner-frame,
+#google_translate_element,
+.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+    position: static !important;
+}
